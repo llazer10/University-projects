@@ -59,12 +59,25 @@ function draw()
 	//head
 	fill(200,100,100);
 	ellipse(gameChar_x, gameChar_y - 50, 30, 30);
+	//legs
+	fill(0,0,200);
+	rect(gameChar_x - 10, gameChar_y - 30, 8, 30);
+	rect(gameChar_x + 2, gameChar_y - 30, 8, 30);
 	//body
 	fill(0);
 	triangle(gameChar_x - 15, gameChar_y - 40, gameChar_x + 15, gameChar_y - 40, gameChar_x, gameChar_y - 10);
-	//legs
-	rect(gameChar_x - 10, gameChar_y - 30, 8, 30);
-	rect(gameChar_x + 2, gameChar_y - 30, 8, 30);
+	//arms
+	fill(0);
+	rect(gameChar_x - 17, gameChar_y - 39, 6, 25);
+	rect(gameChar_x + 12, gameChar_y - 39, 6, 25);
+	//eyes
+	fill(0);
+	ellipse(gameChar_x - 5, gameChar_y - 55, 5, 5);
+	ellipse(gameChar_x + 5, gameChar_y - 55, 5, 5);
+	//hat
+	fill(0,0,200);
+	arc(gameChar_x, gameChar_y - 65, 30, 14, PI, 0);
+	rect(gameChar_x - 17.5, gameChar_y - 65, 35, 5);
 
 	//Jumping facing forwards
 	stroke(100);
@@ -81,16 +94,29 @@ function draw()
 	//head
 	fill(200,100,100);
 	ellipse(gameChar_x, gameChar_y - 50, 30, 30);
+	//legs
+	fill(0,0,200);
+	rect(gameChar_x - 10, gameChar_y - 30, 8, 30);
+	rect(gameChar_x + 2, gameChar_y - 30, 8, 30);
 	//body
 	fill(0);
 	triangle(gameChar_x - 15, gameChar_y - 40, gameChar_x + 15, gameChar_y - 40, gameChar_x, gameChar_y - 10);
-	//legs
-	rect(gameChar_x - 10, gameChar_y - 30, 8, 30);
-	rect(gameChar_x + 2, gameChar_y - 30, 8, 30);
 	//arms raised
-	fill(100);
-	rect(gameChar_x - 20, gameChar_y - 50, 6, 20);
-	rect(gameChar_x + 14, gameChar_y - 50, 6, 20);
+	stroke(0);
+	strokeWeight(5);
+	line(gameChar_x - 12, gameChar_y - 35, gameChar_x - 20, gameChar_y - 60);
+	line(gameChar_x + 12, gameChar_y - 35, gameChar_x + 20, gameChar_y - 60);
+	strokeWeight(1);
+	noStroke();
+
+	//eyes
+	fill(0);
+	ellipse(gameChar_x - 5, gameChar_y - 55, 5, 5);
+	ellipse(gameChar_x + 5, gameChar_y - 55, 5, 5);
+	//hat
+	fill(0,0,200);
+	arc(gameChar_x, gameChar_y - 65, 30, 14, PI, 0);
+	rect(gameChar_x - 17.5, gameChar_y - 65, 35, 5);
 
 	//Walking, turned left
 	stroke(100);
@@ -107,14 +133,32 @@ function draw()
 	//head
 	fill(200,100,100);
 	ellipse(gameChar_x - 2, gameChar_y - 50, 30, 30);
+	//legs
+	fill(0,0,200);
+	stroke(0,0,200);
+	strokeWeight(5);
+	line(gameChar_x-3, gameChar_y-20 , gameChar_x-13, gameChar_y-3)
+	line(gameChar_x, gameChar_y-20 , gameChar_x+5, gameChar_y-3)
+	strokeWeight(1);
+	noStroke();
 	//body
 	fill(0);
 	triangle(gameChar_x - 10, gameChar_y - 40, gameChar_x + 5, gameChar_y - 40, gameChar_x, gameChar_y - 10);
-	//legs
-	rect(gameChar_x - 6, gameChar_y - 30, 8, 30);
 	//arm
-	fill(100);
-	rect(gameChar_x - 6, gameChar_y - 40, 6, 20);
+	stroke(0);
+	strokeWeight(5);
+	line(gameChar_x + 4, gameChar_y - 38, gameChar_x + 10, gameChar_y - 20);
+	line(gameChar_x - 7, gameChar_y - 38, gameChar_x - 14, gameChar_y - 20);
+	strokeWeight(1);
+	noStroke();
+	//hat
+	fill(0,0,200);
+	arc(gameChar_x -2, gameChar_y - 65, 30, 14, PI, 0);
+	rect(gameChar_x - 19, gameChar_y - 65, 34, 5);
+	//eyes
+	fill(0);
+	ellipse(gameChar_x - 10, gameChar_y - 55, 5, 5);
+
 
 
 	//Walking, turned right
@@ -132,14 +176,31 @@ function draw()
 	//head
 	fill(200,100,100);
 	ellipse(gameChar_x - 2, gameChar_y - 50, 30, 30);
+	//legs
+	fill(0,0,200);
+	stroke(0,0,200);
+	strokeWeight(5);
+	line(gameChar_x-3, gameChar_y-20 , gameChar_x-8, gameChar_y-3)
+	line(gameChar_x, gameChar_y-20 , gameChar_x+10, gameChar_y-3)
+	strokeWeight(1);
+	noStroke();
 	//body
 	fill(0);
-	triangle(gameChar_x - 10, gameChar_y - 40, gameChar_x + 5, gameChar_y - 40, gameChar_x, gameChar_y - 10);
-	//legs
-	rect(gameChar_x - 6, gameChar_y - 30, 8, 30);
+	triangle(gameChar_x - 8, gameChar_y - 40, gameChar_x + 5, gameChar_y - 40, gameChar_x, gameChar_y - 10);
 	//arm
-	fill(100);
-	rect(gameChar_x - 4, gameChar_y - 40, 6, 20);
+	stroke(0);
+	strokeWeight(5);
+	line(gameChar_x + 4, gameChar_y - 38, gameChar_x + 10, gameChar_y - 20);
+	line(gameChar_x - 7, gameChar_y - 38, gameChar_x - 14, gameChar_y - 20);
+	strokeWeight(1);
+	noStroke();
+	//hat
+	fill(0,0,200);
+	arc(gameChar_x -2, gameChar_y - 65, 30, 14, PI, 0);
+	rect(gameChar_x - 19, gameChar_y - 65, 34, 5);
+	//eyes
+	fill(0);
+	ellipse(gameChar_x + 6.5, gameChar_y - 55, 5, 5);
 
 
 	//Jumping right
@@ -156,14 +217,29 @@ function draw()
 
 	fill(200,100,100);
 	ellipse(gameChar_x - 2, gameChar_y - 60, 30, 30);
+	//legs
+	stroke(0,0,200);
+	strokeWeight(5);
+	line(gameChar_x , gameChar_y - 30, gameChar_x +8, gameChar_y -12);
+	line(gameChar_x -1, gameChar_y - 30, gameChar_x -7, gameChar_y -12);
+	strokeWeight(1);
+	noStroke();
 	//body
 	fill(0);
 	triangle(gameChar_x - 10, gameChar_y - 50, gameChar_x + 5, gameChar_y - 50, gameChar_x, gameChar_y - 20);
-	//legs
-	rect(gameChar_x - 6, gameChar_y - 40, 8, 30);
 	//arm
-	fill(100);
-	rect(gameChar_x - 4, gameChar_y - 45, 20, 6);
+	stroke(0);
+	strokeWeight(5);
+	line(gameChar_x + 4, gameChar_y - 48, gameChar_x + 20, gameChar_y - 60);
+	strokeWeight(1);
+	noStroke();
+	//hat
+	fill(0,0,200);
+	arc(gameChar_x -2, gameChar_y - 70, 30, 14, PI, 0);
+	rect(gameChar_x - 19, gameChar_y - 70, 34, 5);
+	//eyes
+	fill(0);
+	ellipse(gameChar_x + 6.5, gameChar_y - 60, 5, 5);
 
 
 	//Jumping to the left
@@ -180,13 +256,28 @@ function draw()
 
 	fill(200,100,100);
 	ellipse(gameChar_x - 2, gameChar_y - 60, 30, 30);
+	//legs
+	stroke(0,0,200);
+	strokeWeight(5);
+	line(gameChar_x , gameChar_y - 30, gameChar_x +8, gameChar_y -12);
+	line(gameChar_x -1, gameChar_y - 30, gameChar_x -7, gameChar_y -12);
+	strokeWeight(1);
+	noStroke();
 	//body
 	fill(0);
 	triangle(gameChar_x - 10, gameChar_y - 50, gameChar_x + 5, gameChar_y - 50, gameChar_x, gameChar_y - 20);
-	//legs
-	rect(gameChar_x - 6, gameChar_y - 40, 8, 30);
 	//arm
-	fill(100);
-	rect(gameChar_x - 20, gameChar_y - 45, 20, 6);
+	stroke(0);
+	strokeWeight(5);
+	line(gameChar_x - 4, gameChar_y - 48, gameChar_x - 20, gameChar_y - 60);
+	strokeWeight(1);
+	noStroke();
+	//hat
+	fill(0,0,200);
+	arc(gameChar_x -2, gameChar_y - 70, 30, 14, PI, 0);
+	rect(gameChar_x - 19, gameChar_y - 70, 34, 5);
+	//eyes
+	fill(0);
+	ellipse(gameChar_x - 9, gameChar_y - 60, 5, 5);
 
 }
